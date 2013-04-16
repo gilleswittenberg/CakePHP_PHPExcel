@@ -81,6 +81,11 @@ class PHPExcelWrapper {
 		return $this;
 	}
 
+	public function setColumnAutoSize($column, $value = true) {
+		$this->_sheet = $this->_PHPExcelObj->getActiveSheet();
+		$this->_sheet->getColumnDimension($column)->setAutoSize($value);
+	}
+
 	protected function _getDataProcessor($dataProcessor) {
 		if (!isset($this->_dataProcessors[$dataProcessor])) {
 			if (class_exists($dataProcessor) && in_array('IDataProcessor', class_implements($dataProcessor))) {
