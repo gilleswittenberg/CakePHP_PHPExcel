@@ -1,0 +1,12 @@
+{
+	"name": "gilleswittenberg/p-h-p-excel",
+	"type": "cakephp-plugin",
+	"description": "CakePHP PHPExcel Plugin",
+	"version": "0.0.1",
+	"homepage": "https://github.com/gilleswittenberg/CakePHP_ContactForm",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.3.0",
+		"composer/installers": "*"
+	}
+}
